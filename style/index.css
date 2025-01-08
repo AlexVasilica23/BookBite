@@ -1,6 +1,5 @@
 
-        @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IS:wght@100..400&display=swap');
         /* General Styles */
         body {
             font-family: "Montserrat", serif;
@@ -10,6 +9,7 @@
             color: #333;
             background-color: #F5EBE0;
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -31,9 +31,15 @@
 
         header h1,
         .header-message {
+            opacity: 1;
             margin: 0;
+            font-size: 50px;
+            color: #BC9A6C;
+        }
+
+        .header-message{
             font-size: 25px;
-            color: #84A98C;
+            font-family: "Playwrite IS", serif;
         }
 
         header nav {
@@ -95,6 +101,11 @@
             gap: 20px;
             padding: 20px;
             max-width: 90%;
+            scrollbar-width: none;
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none; /* Hide scrollbar in Chrome/Safari */
         }
 
         .carousel-item {
@@ -166,6 +177,11 @@
             margin-top: 10px;
         }
 
+
+        footer {
+            text-align: center;
+        }
+
         @media (max-width: 768px) {
             .carousel {
                 overflow-x: scroll;
@@ -187,6 +203,14 @@
 
             .carousel::-webkit-scrollbar-track {
                 background-color: #EDEDE9;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
             }
         }
 
